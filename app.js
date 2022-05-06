@@ -3,6 +3,7 @@ const path = require ('path');
 const cors = require('cors');
 //Part#1 point2 - bodyparser not imported.
 const bodyParser = require('body-parser');
+const port = process.env.PORT || 3066;
 
 const nav= [
     {
@@ -58,7 +59,7 @@ app.get('/',function(req,res){
 
 
 //Part#1 point5 - Port no were not defined
-const Port = 3066;
-app.listen(3066,()=>{
+
+app.listen(port,()=>{
     console.log(`server ready on port-no ${Port}`);
 });
