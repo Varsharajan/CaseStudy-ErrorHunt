@@ -61,5 +61,5 @@ app.get('/',function(req,res){
 //Part#1 point5 - Port no were not defined
 
 app.listen(port,()=>{
-    console.log(`server ready on port-no ${Port}`);
+    console.log(`server ready on port-no ${port}`);
 });
